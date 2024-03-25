@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url('images/bg-wallpaper.png'); height: 100vh; width: 100%;
+        }
+
+        .nav {
+            background-color: #000066;
+        }
+
+        .nav-link:hover {
+            color: black !important;
+            background: #0B99A7 !important;
+        }
+
+        .active { 
+            background: #0B99A7 !important; 
+        }
+
+        .title {
+            font-size: 90px;
+            color: #000066;
+        }
+
+        .text-shadow {
+            color: white;
+            font-size: 25px;
+            text-shadow: 0px 4px 4px black;
+        }
+
+        .card:hover {
+        transform: scale(1.1);
+        }
+        
+        .card {
+            transition: transform 0.2s;
+        }
+    </style>
+    <title>KonsulTap</title>
+    <link rel="icon" href="images/logo_icon.png" type="image/icon type">
+</head>
+<body>
+   <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand ps-4" href="home.html">
+                <img src="images/logo.png" alt="" width="150" height="24">
+            </a>
+            <!-- profile -->
+            <a class="navbar-brand text-right ps-4" href="profile.html">
+                <img src="images/profile.png" alt="" width="100%" height="40">
+            </a>
+        </div>
+    </nav>
+
+    <!-- navbar -->
+    <nav class="nav nav-pills nav-justified">
+        <a class="nav-link text-light d-flex align-items-center justify-content-center fs-5 fw-bold" aria-current="page" href="home.html">HOME</a>
+        <a class="nav-link text-light d-flex align-items-center justify-content-center fs-5 fw-bold active" href="common-illness.html">COMMON ILLNESS</a>
+        <a class="nav-link text-dark" style="background-color: #E9DD3A;" href="#">SCHEDULE AN <br><span class="fs-3 fw-bolder">APPOINTMENT</span></a>
+        <a class="nav-link text-light d-flex align-items-center justify-content-center fs-5 fw-bold" href="consultations.html">CONSULTATIONS</a>
+        <a class="nav-link text-light d-flex align-items-center justify-content-center fs-5 fw-bold" href="records.html">RECORDS</a>
+    </nav>
+
+    <!-- body -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- Home Remedy Texts -->
+            <div class="col-lg-12 text-center pt-5 px-5">
+                <p class="title">Home Remedy</p>
+                <p class="fs-5 px-5 pb-5 mx-5 lh-lg">
+                    Common illnesses span a range of health issues affecting people globally. From respiratory infections like the flu to 
+                    gastrointestinal problems and skin conditions, individuals commonly face challenges such as arthritis, hypertension, 
+                    and mental health disorders. Diabetes, migraines, and genetic conditions further contribute to this diverse landscape. 
+                    Seeking professional medical guidance is essential for accurate diagnosis and tailored treatment plans.
+                </p>
+            </div>
+            <!-- Buttons for common illnesses -->
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3 pb-4 d-flex align-items-center justify-content-center ">
+                        <a href="#" class="card border border-dark position-relative" style="width: 15rem; background-color: #006699; border-radius: 20%;">
+                            <div class="position-absolute top-0 start-50 translate-middle-x text-center text-shadow pt-3">Dengue</div>
+                            <img src="images/Mosquito.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 pb-4 d-flex align-items-center justify-content-center ">
+                        <a href="common-illness-cold.html" class="card border border-dark position-relative" style="width: 15rem; background-color: #000066; border-radius: 20%;">
+                            <div class="position-absolute top-0 start-50 translate-middle-x text-center text-shadow pt-3">Cold</div>
+                            <img src="images/Cold.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 pb-4 d-flex align-items-center justify-content-center ">
+                        <a href="#" class="card border border-dark position-relative" style="width: 15rem; background-color: #CCCC00; border-radius: 20%;">
+                            <div class="position-absolute top-0 start-50 translate-middle-x text-center text-shadow pt-3">hypertension</div>
+                            <img src="images/Hypertension.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 pb-4 d-flex align-items-center justify-content-center ">
+                        <a href="#" class="card border border-dark position-relative" style="width: 15rem; background-color: #F2F465; border-radius: 20%;">
+                            <div class="position-absolute top-0 start-50 translate-middle-x text-center text-shadow pt-3">Pneumonia</div>
+                            <img src="images/Pneumonia.png" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
