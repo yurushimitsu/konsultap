@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url('images/bg-wallpaper.png'); height: 100vh; width: 100%;
+        }
+
+        .nav {
+            background-color: #000066;
+        }
+
+        .nav-link:hover {
+            color: black !important;
+            background: #0B99A7 !important;
+        }
+
+        .active { 
+            background: #0B99A7 !important; 
+        }
+
+        .title {
+            /* font-size: 90px; */
+            font-size: 5vw;
+            font-weight: bold;
+            color: #000066;
+        }
+
+        .text-shadow {
+            color: white;
+            font-size: 25px;
+            text-shadow: 0px 4px 4px black;
+        }
+    </style>
+    <title>KonsulTap</title>
+    <link rel="icon" href="images/logo_icon.png" type="image/icon type">
+</head>
+<body>
+    <div class="d-flex flex-column min-vh-100 min-vw-100">
+        <div class="container d-flex flex-grow-1 justify-content-center align-items-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 shadow-lg p-5">
+                    <form action="" method="post">
+                        <img src="images/logo.png" alt="" width="100%" height="100%">
+                        <h3 class="text-center py-3" style="color: #000066;">STUDENT LOGIN</h3>
+                        <div class="row pb-4 px-lg-5">
+                            <div class="col-lg-6 d-grid py-2">
+                                <a href="login-user.html" class="btn btn-lg text-light" style="background-color: #000066;" type="button">Student</a>
+                            </div>
+                            <div class="col-lg-6 d-grid py-2">
+                                <a href="login-staff.html" class="btn btn-lg text-light" style="background-color: #6B78AF;" type="button">Staff</a>
+                            </div>
+                        </div>
+                        <div class="row pb-3 px-lg-5">
+                            <div class="col-12">
+                                <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="studID" id="studID" value="" placeholder="Student I.D. Number" required>
+                                <label for="studID" class="form-label">Student I.D. Number</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating mb-3">
+                                <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password" required>
+                                <label for="password" class="form-label">Password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-lg-5">
+                            <div class="col-12">
+                                <div class="d-grid py-3">
+                                <button class="btn btn-lg text-light" style="background-color: #000066;" type="submit">LOGIN</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-lg-5">
+                            <div class="col-12">
+                                <div class="d-grid my-3">
+                                    <a href="forgot-password.html" class="text-center text-dark fw-bold">I FORGOT MY PASSWORD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
