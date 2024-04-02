@@ -117,21 +117,28 @@
             selectable: true,
             selectHelper: true,
             fixedWeekCount: false,
-            // validRange: {
-            //     // start: '2024-04-02',
-            //     // end: '2024-05-02'
-            //     function(currentDate) {
-            //         // Generate a new date for manipulating in the next step
-            //         var startDate = new Date(currentDate.valueOf());
-            //         var endDate = new Date(currentDate.valueOf());
+            validRange: function(nowDate) {
+                var endDay = nowDate.setMonth(nowDate.getMonth() + 1);
+                var today = nowDate.setMonth(nowDate.getMonth() - 1);
 
-            //         // Adjust the start & end dates, respectively
-            //         startDate.setDate(startDate.getDate()); // One day in the past
-            //         endDate.setDate(endDate.getDate() + 30); // Two days into the future
+                return {
+                    start: today,
+                    end: endDay,
+                };
+                // start: '2024-04-02',
+                // end: '2024-05-02'
+                // function() {
+                //     // Generate a new date for manipulating in the next step
+                //     var startDate = new Date(currentDate.valueOf());
+                //     var endDate = new Date(currentDate.valueOf());
 
-            //         return { start: startDate, end: endDate };
-            //     }
-            // },
+                //     // Adjust the start & end dates, respectively
+                //     startDate.setDate(startDate.getDate()); // One day in the past
+                //     endDate.setDate(endDate.getDate() + 30); // Two days into the future
+
+                //     return { start: startDate, end: endDate };
+                // }
+            },
        
             // calendar header settings
             headerToolbar: {
@@ -225,6 +232,3 @@
         </div>
     </div>
 </form>
-
-
-  
