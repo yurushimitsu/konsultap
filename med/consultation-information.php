@@ -193,13 +193,13 @@ if (mysqli_query($conn, $videoconferenceQuery)) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'konsultap2024@gmail.com';
-        $mail->Password = 'yxhc yoxm ksht dluh';
+        $mail->Username = '';
+        $mail->Password = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
 
         // Recipient settings
-        $mail->setFrom('konsultap2024@gmail.com', 'KonsulTap');
+        $mail->setFrom('', 'KonsulTap');
         $mail->addAddress($recipientEmail); // Send to the student's email
         
         $htmlContent = file_get_contents('../emailTemplates/generate_vidcon_link_template.php');

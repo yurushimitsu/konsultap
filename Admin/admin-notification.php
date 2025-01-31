@@ -108,13 +108,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['click'])) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'konsultap2024@gmail.com';
-            $mail->Password = 'yxhc yoxm ksht dluh'; // App-specific password
+            $mail->Username = '';
+            $mail->Password = ''; // App-specific password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 
             // Recipients
-            $mail->setFrom('konsultap2024@gmail.com', 'KonsulTap Admin');
+            $mail->setFrom('', 'KonsulTap Admin');
             $mail->addAddress($userEmail); // Add the user's email address
             
             $htmlContent = file_get_contents('../emailTemplates/reset_pass_template.php');

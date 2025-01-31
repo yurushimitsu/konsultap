@@ -121,13 +121,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id'])) {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'konsultap2024@gmail.com'; // Your Gmail username
-                $mail->Password = 'yxhc yoxm ksht dluh'; // Your app password
+                $mail->Username = ''; // Your Gmail username
+                $mail->Password = ''; // Your app password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                 $mail->Port = 465;
 
                 // Recipient
-                $mail->setFrom('konsultap2024@gmail.com', 'KonsulTAP Team'); // Sender's email and name
+                $mail->setFrom('', 'KonsulTAP Team'); // Sender's email and name
                 $mail->addAddress($studentEmail); // Recipient's email from the query
 
                 // Content

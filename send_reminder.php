@@ -49,14 +49,14 @@ if (!$result) {
             $mail->SMTPDebug = 2; // Enable debug output for detailed error messages
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'konsultap2024@gmail.com';
+            $mail->Username = '';
             // Use your app password here if 2-Step Verification is enabled
-            $mail->Password = 'yxhc yoxm ksht dluh'; 
+            $mail->Password = ''; 
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // or use ENCRYPTION_STARTTLS for port 587
             $mail->Port = 465; // Use 587 for TLS
 
             // Recipient settings
-            $mail->setFrom('konsultap2024@gmail.com', 'KonsulTap');
+            $mail->setFrom('', 'KonsulTap');
             $mail->addAddress($recipientEmail);
             
             // Ensure this is in absolute path
@@ -70,17 +70,6 @@ if (!$result) {
             $htmlContent = str_replace('{{endTime}}', $endTime , $htmlContent);
             $htmlContent = str_replace('{{createdAtDate}}', $createdAtDate , $htmlContent);
             $htmlContent = str_replace('{{year}}', date('Y'), $htmlContent);
-            
-            // $mail->Body = "Hello $recipientName, 
-            //                 <br><br>We hope this message finds you well! This is a friendly reminder about your upcoming appointment.
-            //                 <br><br><b>Appointment Details: </b> <br>
-            //                 <b>What: </b> $appointmentType Consultation<br>
-            //                 <b>When: </b> $formalDate on $appointmentTime to $endTime<br>
-            //                 <b>Where: </b> La Immaculada Concepcion School<br><br>
-            //                 This appointment was scheduled on <b>$createdAtDate</b>. If you have any questions or need to make adjustments, feel free to reach out.
-            //                 <br><br>We look forward to seeing you!
-            //                 <br><br>Best Regards,
-            //                 <br>KonsulTap";
 
             // Email content
             $mail->isHTML(true);

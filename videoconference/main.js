@@ -1,6 +1,6 @@
 // Using agora sdk app id 
 // We will use token authentication if we are going to production 
-let APP_ID = "ad9d0e39ec7d499b8cd54b5aaea0ec6c";
+let APP_ID = "";
 
 // Ito yung gagamitin pag production na tayo. For now null muna siya kasi app_id ang gagamitin 
 let token = null;

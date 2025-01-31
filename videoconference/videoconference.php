@@ -127,8 +127,8 @@ if (isset($_SESSION['IdNumber'])) {
 
 
     // Agora credentials
-    $appID = 'ad9d0e39ec7d499b8cd54b5aaea0ec6c';
-    $appCertificate = '78f98177decc40849391308b48659c83';
+    $appID = '';
+    $appCertificate = '';
     $channelName = $videoconference_id;
     
     // Generate Agora token
@@ -281,44 +281,7 @@ if (isset($_SESSION['IdNumber'])) {
 
     <script src="agora-rtm-sdk-1.5.1.js"></script>
 
-<script>
-    // // Function to initialize a 1-hour timer with alerts
-    // function startCallTimer() {
-    //     const maxDuration = 3600; // max duration in seconds (1 hour)
-    //     const warningTime = 300;  // 5 minutes before end (in seconds)
-    //     let timeLeft = maxDuration;
-        
-    //     // Function to format time in MM:SS
-    //     function formatTime(seconds) {
-    //         const minutes = Math.floor(seconds / 60);
-    //         const remainingSeconds = seconds % 60;
-    //         return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
-    //     }
-
-    //     const timerInterval = setInterval(() => {
-    //         timeLeft--;
-
-    //         // Show warning when timeLeft is 5 minutes
-    //         if (timeLeft === warningTime) {
-    //             Swal.fire({
-    //                 icon: 'warning',
-    //                 title: 'Session Ending Soon',
-    //                 text: 'Your session will end in 5 minutes. Please wrap up.',
-    //                 showCloseButton: true,
-    //             });
-    //         }
-            
-    //         // Update the UI with the formatted time left
-    //         document.getElementById('time-left').textContent = `Time Left: ${formatTime(timeLeft)}`;
-
-    //         // End call when timeLeft reaches 0
-    //         if (timeLeft <= 0) {
-    //             clearInterval(timerInterval);
-    //             endCall(); // Function to handle the end of the call
-    //         }
-    //     }, 1000); // update every second
-    // }
-    
+<script>  
     let callStartTime = null;  // To store the time when the call starts
     let timerInterval;
     let totalCallDuration = 0;  // To store the total duration of the call in seconds
@@ -430,7 +393,7 @@ if (isset($_SESSION['IdNumber'])) {
     <script>
 
         
-        let APP_ID = "ad9d0e39ec7d499b8cd54b5aaea0ec6c";
+        let APP_ID = "";
         let token = null;
         let uid = String(Math.floor(Math.random() * 10000));
 

@@ -32,13 +32,13 @@ function sendEmailReminder($recipientEmail, $appointmentDate, $appointmentTime) 
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'konsultap2024@gmail.com';
-    $mail->Password = 'yxhc yoxm ksht dluh'; // Use environment variables for security
+    $mail->Username = '';
+    $mail->Password = ''; // Use environment variables for security
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 
     // Recipient settings
-    $mail->setFrom('konsultap2024@gmail.com', 'KonsulTap');
+    $mail->setFrom('', 'KonsulTap');
     $mail->addAddress($recipientEmail);
 
     // Email content

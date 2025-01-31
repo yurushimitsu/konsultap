@@ -38,13 +38,13 @@ if (isset($_POST['resendCode'])) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'konsultap2024@gmail.com'; // Your Gmail username
-            $mail->Password = 'yxhc yoxm ksht dluh'; // Your app password
+            $mail->Username = ''; // Your Gmail username
+            $mail->Password = ''; // Your app password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 
             //Recipient
-            $mail->setFrom('konsultap2024@gmail.com'); // Sender's email
+            $mail->setFrom(''); // Sender's email
             $mail->addAddress($user['Email']); // Recipient's email
 
              $htmlContent = file_get_contents('verification_template');
